@@ -13,7 +13,7 @@ public class Employee {
     private String lastName;
     private String description;
 
-    XCprivate Employee() {}
+    private Employee() {}
 
     public Employee(String firstName, String lastName, String description) {
         this.firstName = firstName;
