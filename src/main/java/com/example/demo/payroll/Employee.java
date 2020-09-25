@@ -1,15 +1,19 @@
 package com.example.demo.payroll;
 
-@Entity
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import java.util.Objects;
 
+@Entity
 public class Employee {
 
-    private @Id @GeneratedValue Long id; (2)
+    private @Id @GeneratedValue Long id;
     private String firstName;
     private String lastName;
     private String description;
 
-    private Employee() {}
+    XCprivate Employee() {}
 
     public Employee(String firstName, String lastName, String description) {
         this.firstName = firstName;
